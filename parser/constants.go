@@ -1,0 +1,7 @@
+package parser
+
+const (
+	FREESECT    = 0xFFFFFFFF
+	ENDOFCHAIN  = 0xFFFFFFFE
+	MAX_SECTORS = 1024
+)

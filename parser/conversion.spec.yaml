@@ -1,0 +1,7 @@
+Module: parser
+Profile: OLEProfile
+Filename: ole_profile.json
+GenerateDebugString: true
+Structs:
+  - CFHeader
+  - DirectoryHeader

@@ -1,0 +1,45 @@
+{
+    "CFHeader": [0, {
+        "Signature": [0, ["unsigned long long"]],
+        "CLSID": [8, ["String", {"length": 16}]],
+        "MinorVersion": [24, ["unsigned short"]],
+        "MajorVersion": [26, ["unsigned short"]],
+
+        "SectorSize": [30, ["unsigned short"]],
+        "MiniSectorShift": [32, ["unsigned short"]],
+
+        "NumDirectorySectors": [40, ["unsigned long"]],
+        "NumFATSectors": [44, ["unsigned long"]],
+        "DirectorySectorLoc": [48, ["unsigned long"]],
+
+        "MiniSectorCutoff": [56, ["unsigned long"]],
+        "MiniFATSectorLoc": [60, ["unsigned long"]],
+        "NumMiniFATSectors": [64, ["unsigned long"]],
+        "DIFATSectorLoc": [68, ["unsigned long"]],
+        "NumDIFATSectors": [72, ["unsigned long"]],
+        "InitialDIFATs": [76, ["Array", {"target": "unsigned long", "count": 109}]]
+    }],
+    "DirectoryHeader": [128, {
+        "Name": [0, ["UnicodeString", {"length": 64}]],
+        "NameLength": [64, ["unsigned short"]],
+        "TypeInt": [66, ["unsigned char"]],
+        "Type": [66, ["Enumeration", {
+            "target": "unsigned char",
+            "choices": {
+                "1": "Storage",
+                "2": "Stream",
+                "5": "Root"
+            }
+        }]],
+        "Flags": [67, ["unsigned char"]],
+        "SidLeftSib": [68, ["unsigned long"]],
+        "SidRightSib": [72, ["unsigned long"]],
+        "SidChild": [76, ["unsigned long"]],
+        "ClsId": [80, ["String", {"length": 16}]],
+        "UserFlags": [96, ["unsigned long"]],
+        "CreateTime": [100, ["unsigned long long"]],
+        "ModifyTime": [108, ["unsigned long long"]],
+        "SectorStart": [116, ["unsigned long"]],
+        "StreamSize": [120, ["unsigned long long"]]
+    }]
+}
